@@ -31,8 +31,6 @@
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #fff;
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -703,6 +701,7 @@ header.sticky{
     .contact-info{
         grid-template-columns: repeat(4, 1fr);
     }
+	
 }
 @media (max-width: 1400px){
 	header{
@@ -747,6 +746,11 @@ header.sticky{
 		align-items: center;
 		padding: 150px 30px;
 		transition: 0.5s all;
+	}
+	.services__container{
+		grid-template-columns: repeat(1, 1fr);
+		width: 70%;
+		margin-left: 90px;
 	}
 	.navbar a{
 		display: block;
